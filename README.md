@@ -1,50 +1,112 @@
-# React + TypeScript + Vite
+````markdown
+# Dark Mode Toggle with Vite React and ShadCN Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository demonstrates a simple dark mode toggle implementation in a React app built with Vite. The project uses **ShadCN UI components** and **Tailwind CSS** to style the application and manage the dark mode theme.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌙 Toggle between light and dark modes.
+- 🎨 Styled with ShadCN Tailwind components.
+- ⚡ Built with Vite for fast development.
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js (v16+ recommended)
+- npm or yarn
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/dark-mode-toggle
+   cd dark-mode-toggle
+   ```
+````
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+## Usage
+
+1. Start the development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+2. Open your browser and navigate to `http://localhost:5173`.
+
+## Build for Production
+
+To build the project for production:
+
+```bash
+npm run build
+# or
+yarn build
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+The output will be in the `dist` directory.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## File Structure
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```plaintext
+src/
+├── components/
+│   ├── DarkModeToggle.jsx  # The toggle button for dark mode
+│   └── ...
+├── styles/
+│   └── index.css           # Tailwind CSS configuration
+├── App.jsx                 # Main app component
+├── main.jsx                # Entry point
+└── index.html              # HTML template
+```
+
+## How It Works
+
+- **Tailwind CSS Configuration**:  
+  Tailwind is configured to support dark mode using the `dark` class. Add the following to `tailwind.config.js`:
+
+  ```javascript
+  module.exports = {
+    darkMode: "class",
+    content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  };
+  ```
+
+- **ShadCN Components**:  
+  Install and use ShadCN components for styling. The toggle button updates the `class` on the root element to switch themes.
+
+## Learning Goals
+
+- Understand how to use Tailwind CSS for light/dark mode.
+- Get familiar with ShadCN UI components in React.
+- Learn how to toggle CSS classes dynamically.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+- [Vite](https://vitejs.dev/) for the fast build tool.
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework.
+- [ShadCN](https://shadcn.dev/) for the beautiful React components.
+
+---
+
+Happy coding! ✨
+
+```
+
 ```
