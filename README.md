@@ -16,12 +16,11 @@ This repository demonstrates a simple dark mode toggle implementation in a React
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/dark-mode-toggle
    cd dark-mode-toggle
    ```
-
-````
 
 2. Install dependencies:
    ```bash
@@ -102,12 +101,3 @@ This project is licensed under the MIT License.
 - [Vite](https://vitejs.dev/) for the fast build tool.
 - [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework.
 - [ShadCN](https://shadcn.dev/) for the beautiful React components.
-
----
-
-Happy coding! ✨
-
-```
-
-```
-````
