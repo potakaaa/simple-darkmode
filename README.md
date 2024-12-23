@@ -1,4 +1,3 @@
-````markdown
 # Dark Mode Toggle with Vite React and ShadCN Tailwind
 
 This repository demonstrates a simple dark mode toggle implementation in a React app built with Vite. The project uses **ShadCN UI components** and **Tailwind CSS** to style the application and manage the dark mode theme.
@@ -21,6 +20,7 @@ This repository demonstrates a simple dark mode toggle implementation in a React
    git clone https://github.com/your-username/dark-mode-toggle
    cd dark-mode-toggle
    ```
+
 ````
 
 2. Install dependencies:
@@ -70,7 +70,7 @@ src/
 
 ## How It Works
 
-- **Tailwind CSS Configuration**:  
+- **Tailwind CSS Configuration**:
   Tailwind is configured to support dark mode using the `dark` class. Add the following to `tailwind.config.js`:
 
   ```javascript
@@ -84,7 +84,7 @@ src/
   };
   ```
 
-- **ShadCN Components**:  
+- **ShadCN Components**:
   Install and use ShadCN components for styling. The toggle button updates the `class` on the root element to switch themes.
 
 ## Learning Goals
@@ -110,3 +110,4 @@ Happy coding! ✨
 ```
 
 ```
+````
