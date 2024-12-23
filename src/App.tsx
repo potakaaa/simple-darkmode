@@ -1,13 +1,18 @@
 import { Switch } from "@/components/ui/switch";
-import { Label } from "@/components/ui/label";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ModeToggle } from "./components/mode-toggle";
 import "./App.css";
 
 const App = () => {
   return (
-    <div className="size-full bg-zinc-950 h-screen text-white flex justify-center items-center gap-2 font-sans">
-      <Switch id="dark-mode" />
-      <Label htmlFor="dark-mode">Dark Mode</Label>
-    </div>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <div className="size-full bg-background h-screen text-white flex justify-center items-center space-x-2">
+        <ModeToggle />
+        <h2 className="scroll-m-20 text-lg font-semibold tracking-tight text-foreground transition-all duration-300">
+          Dark Mode
+        </h2>
+      </div>
+    </ThemeProvider>
   );
 };
 

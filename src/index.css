@@ -3,6 +3,9 @@
 @tailwind utilities;
 @import "@fontsource/inter/variable.css";
 
+body {
+  font-family: "Inter", sans-serif;
+}
 /* ... */
 
 @layer base {
