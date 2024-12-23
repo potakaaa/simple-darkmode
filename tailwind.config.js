@@ -50,7 +50,10 @@ module.exports = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
+  		},
+      fontFamily: {
+        sans: ['Inter var', 'sans-serif'],
+      },
   	}
   },
   plugins: [require("tailwindcss-animate")],
