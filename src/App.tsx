@@ -25,7 +25,7 @@ const App = () => {
         </div>
         <div className="fixed bottom-10 p-4">
           <Drawer>
-            <DrawerTrigger className="text-sm text-foreground font-medium rounded-lg py-1 px-3 transition duration-300 hover:bg-zinc-600 hover:bg-opacity-15">
+            <DrawerTrigger className="text-sm text-foreground font-medium rounded-lg py-2 px-3 transition duration-300 hover:bg-zinc-600 hover:bg-opacity-15">
               Open
             </DrawerTrigger>
             <DrawerContent>
@@ -37,7 +37,7 @@ const App = () => {
               </DrawerHeader>
               <DrawerFooter>
                 <DrawerClose>
-                  <Button variant="outline">Close</Button>
+                  <Button variant="outline">Merry Christmas!!!</Button>
                 </DrawerClose>
               </DrawerFooter>
             </DrawerContent>
